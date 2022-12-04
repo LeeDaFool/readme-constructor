@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const { title } = require('process');
 
 
 // Template for the ReadMe file
@@ -101,19 +102,21 @@ const questions = [
     },
 ];
 
-init
+inquirer
   .prompt(questions)
-  .then((result) => {
-    
-  }).catch((err) => {
-    
+  .then((answers) => {
+    const readMEContent = generateReadME(answers);
+
+    fs.writeFile(`${answers.title}.md`, readMEContent, (err) => 
+    err ? console.log(err) : console.log('Successfully create READ.md file!')
+    );
   });
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
+// // TODO: Create a function to initialize app
+// function init() {}
 
-// Function call to initialize app
-init();
+// // Function call to initialize app
+// init();
