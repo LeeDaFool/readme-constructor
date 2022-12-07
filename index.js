@@ -44,10 +44,10 @@ ${license}
 // TODO: Create an array of questions for user input
 const questions = [
   {
-      type: 'checkbox',
+      type: 'confirm',
       message: 'Are you ready to begin your professional readME?',
       name: 'agreement',
-      choices: ['Yes', 'No'],
+      validate: (value)=> { if(value == true){return true}}
     },
     {
       type: 'input',
@@ -107,7 +107,7 @@ inquirer
   .then((answers) => {
     const readMEContent = generateReadME(answers);
 
-    fs.writeFile(`${answers.title}.md`, readMEContent, (err) => 
+    fs.writeFile(`${answers.title.toLowerCase().split(' ').join('')}.md`, readMEContent, (err) => 
     err ? console.log(err) : console.log('Successfully create READ.md file!')
     );
   });

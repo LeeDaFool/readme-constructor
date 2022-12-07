@@ -1,35 +1,23 @@
-# Wild card
+# ReadMe Constructor
 
 ## Description
 
-First project
+A quick and easy professional readme generator for developlers 
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
 
 ## Installation
 
-you dont
+-Node.Js
 
 ## Usage
 
-nah
+Provide instructions and examples for use. Include screenshots as needed.
 
-## Guidelines
+To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
-nah
+![alt text](assets/images/screenshot.png)
 
-## Instrcutions
-
-look within
 
 ## License
+MIT 
 
-The MIT License
-
-# Contact:
-* GitHub: .com
-* LinkedIn: .com
-* E-mail: .com
