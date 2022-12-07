@@ -11,13 +11,16 @@ A quick and easy professional readme generator for developlers
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Link to video: https://drive.google.com/file/d/1JjIYdXkjIawC98QeEP1hZAy_hvufqPS5/view
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
-![alt text](assets/images/screenshot.png)
+## Credits
 
+- Grace Choi: https://github.com/gachoi06?tab=repositories
+
+- Xander Rapstine: https://github.com/Xandromus?tab=repositories
 
 ## License
 MIT 
+
 
